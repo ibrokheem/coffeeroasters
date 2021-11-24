@@ -1,0 +1,46 @@
+.site-nav__list {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .site-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-nav__item:not(:last-child) {
+    margin-right: 33px;
+  }
+  
+  .site-nav__link {
+    text-decoration: none;
+    font-family: "Barlow";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+
+    &:hover{
+      color: #333D4B;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .site-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-nav__item:not(:last-child) {
+    margin-right: 33px;
+  }
+}

@@ -1,0 +1,21 @@
+.main-logo{
+  display: block;
+  width: 163px;
+  height: 18px;
+  opacity: 1;
+}
+
+.main-logo:hover{
+  opacity: 0.8;
+}
+.main-logo:active{
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-logo{
+    width: 236px;
+    height: 26px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,40 @@
+.nav-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  z-index: 1;
+  top: -5000px;
+  transition: transform 0.5s ease;
+}
+
+.nav-modal--active{
+  top: 0;
+}
+
+.nav-modal__list {
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-modal__item {
+  margin-bottom: 32px;
+}
+
+.nav-modal__link {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+  text-decoration: none;
+}

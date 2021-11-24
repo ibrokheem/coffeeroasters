@@ -1,0 +1,28 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body{
+  height: 100%;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  background: #fff;
+  color: #333D4B;
+} 
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+main {
+  margin-top: 98px;
+  flex-grow: 1;
+}

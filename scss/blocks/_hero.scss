@@ -1,0 +1,160 @@
+.hero__container{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title{
+  width: 279px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.hero__desc{
+  width: 279px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 54px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+
+.btn-create-plan{
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  padding: 15px 31px;
+  background: #0E8784;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-create-plan:hover{
+  background-color: #66D2CF;
+}
+
+.btn-create-plan--inline{
+  width: 217px;
+  display: inline-block;
+  margin-bottom: 120px;
+}
+
+// TABLET
+@media only screen and (min-width: 750px) {
+
+  .hero__container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 58px;
+    text-align: left;
+    background-image: url("../img/tablet-hero-bg.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  .hero__title{
+    width: 329px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .hero__desc{
+    width: 398px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: left;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  .btn-create-plan{
+    padding: 15px 31px;
+  }
+}
+
+// DESKTOP
+@media only screen and (min-width: 1000px) {
+
+  .hero__container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero-content{
+    width: 100%;
+    padding-top: 117px;
+    padding-bottom: 117px;
+    padding-left: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("../img/desktop-hero-bg.png");
+    background-size: cover;
+    background-position: 0 0;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .hero__title{
+    width: 493px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left;
+  }
+
+  .hero__desc{
+    width: 445px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 71px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+}
+
