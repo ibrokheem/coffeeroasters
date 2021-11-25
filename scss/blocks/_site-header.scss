@@ -5,8 +5,11 @@
   left: 0;
   z-index: 99;
   padding-top: 43px;
+  // padding-right: 25px;
   padding-bottom: 43px;
+  // padding-left: 25px;
   background-color: #fff;
+  border: 1px solid green;
 }
 
 .site-header__container{
@@ -32,23 +35,29 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 1000px) {
+
+@media only screen and (min-width: 750px) {
   .site-header{
-    padding-top: 40px;
-    padding-bottom: 53px;
+    padding-top: 32px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+
   }
-  
+
   .site-header__hamburger{
     display: none;
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
   .site-header{
-    padding-top: 32px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    // padding-right: 30px;
+    padding-bottom: 53px;
+    // padding-left: 30px;
   }
-
+  
   .site-header__hamburger{
     display: none;
   }

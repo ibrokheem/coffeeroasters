@@ -33,6 +33,7 @@ body {
   line-height: 25px;
   background: #fff;
   color: #333D4B;
+  position: relative;
 }
 
 img {
@@ -41,10 +42,16 @@ img {
 }
 
 main {
-  margin-top: 98px;
+  margin-top: 105px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    margin-top: 120px;
+  }
 }
 
 .visually-hidden {
@@ -74,8 +81,8 @@ main {
   .container {
     width: 100%;
     max-width: 750px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -85,8 +92,8 @@ main {
   .container {
     width: 100%;
     max-width: 1340px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -101,6 +108,7 @@ main {
   padding-top: 43px;
   padding-bottom: 43px;
   background-color: #fff;
+  border: 1px solid green;
 }
 
 .site-header__container {
@@ -132,20 +140,22 @@ main {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
   .site-header {
-    padding-top: 40px;
-    padding-bottom: 53px;
+    padding-top: 32px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
   }
   .site-header__hamburger {
     display: none;
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
   .site-header {
-    padding-top: 32px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 53px;
   }
   .site-header__hamburger {
     display: none;
@@ -227,12 +237,18 @@ main {
 }
 
 .hero__container {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
 .hero-content {
-  width: 100%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,20 +262,13 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-image: url("../img/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero__title {
-  width: 279px;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
   font-family: "Fraunces 9pt";
-  font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 40px;
@@ -268,7 +277,6 @@ main {
 }
 
 .hero__desc {
-  width: 279px;
   padding: 0;
   margin: 0;
   margin-bottom: 54px;
@@ -303,11 +311,15 @@ main {
 
 @media only screen and (min-width: 750px) {
   .hero__container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+    background-image: url("../img/tablet-hero-bg.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: contain;
   }
   .hero-content {
-    width: 100%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -318,13 +330,9 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin: 0;
     padding-left: 58px;
     text-align: left;
-    background-image: url("../img/tablet-hero-bg.png");
-    background-repeat: no-repeat;
-    overflow: hidden;
-    border-radius: 10px;
-    background-size: cover;
   }
   .hero__title {
     width: 329px;
@@ -352,13 +360,14 @@ main {
 
 @media only screen and (min-width: 1000px) {
   .hero__container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 116px;
+    padding-bottom: 116px;
+    background-image: url("../img/desktop-hero-bg.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
   }
   .hero-content {
-    width: 100%;
-    padding-top: 117px;
-    padding-bottom: 117px;
+    width: auto;
     padding-left: 85px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -370,12 +379,7 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    background-image: url("../img/desktop-hero-bg.png");
-    background-size: cover;
-    background-position: 0 0;
     text-align: left;
-    overflow: hidden;
-    border-radius: 10px;
   }
   .hero__title {
     width: 493px;
@@ -400,12 +404,13 @@ main {
 
 .collection__container {
   position: relative;
-  padding-top: 264px;
+  padding-top: 205px;
   padding-bottom: 120px;
 }
 
 .collection__title {
   position: absolute;
+  top: 110px;
   left: 0;
   right: 0;
   font-size: 72px;
@@ -417,7 +422,6 @@ main {
   text-align: center;
   background-color: #83888F;
   z-index: -1;
-  opacity: 0.5;
   background-image: -webkit-linear-gradient(-90deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -442,11 +446,15 @@ main {
           align-items: center;
 }
 
+.collection__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
 .collection__img {
   width: 255px;
   height: 193px;
   display: block;
-  margin-bottom: 70px;
+  margin-bottom: 24px;
 }
 
 .collection__item__title {
@@ -471,48 +479,21 @@ main {
 
 @media only screen and (min-width: 750px) {
   .collection-container {
-    padding-top: 203px;
-    padding-bottom: 203px;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
   .collection__title {
-    top: 204px;
+    top: 144px;
     left: 0;
     right: 0;
     font-size: 96px;
     line-height: 72px;
     text-align: center;
+    opacity: 0.5;
   }
-  .collection__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin-bottom: 32px;
-  }
-  .collection__item:not(:last-child) {
-    margin-bottom: 48px;
-  }
-  .collection__item__title {
-    width: 255px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 24px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .collection__item__info {
-    width: 282px;
-    padding: 0;
-    margin: 0;
+  .collection__list {
+    padding-right: 58px;
+    padding-left: 58px;
   }
   .collection__item {
     display: -webkit-box;
@@ -525,6 +506,22 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .collection__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .collection__img {
+    margin: 0;
+    margin-right: 36px;
+  }
+  .collection__item__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .collection__item__content {
     display: -webkit-box;
@@ -534,14 +531,17 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .collection__item__title {
-    width: 255px;
-    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .collection__item__info {
-    width: 282px;
     text-align: left;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -561,8 +561,6 @@ main {
             align-items: center;
   }
   .collection__list {
-    padding-right: 84px;
-    padding-left: 84px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,6 +573,7 @@ main {
     font-size: 150px;
     line-height: 130px;
     text-align: center;
+    opacity: 0.5;
   }
   .collection__item {
     width: calc(100% /4 -30px);
@@ -596,6 +595,10 @@ main {
   .collection__item:not(:last-child) {
     margin: 0;
     margin-right: 30px;
+  }
+  .collection__img {
+    margin: 0;
+    margin-bottom: 72px;
   }
   .collection__item__content {
     display: -webkit-box;

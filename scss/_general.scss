@@ -15,6 +15,7 @@ body{
   line-height: 25px;
   background: #fff;
   color: #333D4B;
+  position: relative;
 } 
 
 img{
@@ -23,6 +24,12 @@ img{
 }
 
 main {
-  margin-top: 98px;
+  margin-top: 105px;
   flex-grow: 1;
+}
+
+@media only screen and (min-width: 1000px){
+  main{
+    margin-top: 120px;
+  }
 }
