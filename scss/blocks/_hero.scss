@@ -11,19 +11,10 @@
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  // max-width: 279px;
-  // padding-right: 24px;
-  // padding-left: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  // padding-top: 100px;
-  // padding-bottom: 100px;
-  // background-image: url("../img/hero-bg.png");
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  // background-position: center center;
 }
 
 .hero__title{
@@ -131,11 +122,6 @@
 
 // DESKTOP
 @media only screen and (min-width: 1000px) {
-  .hero{
-    // padding-right: 50px;
-    // padding-left: 50px;
-  }
-
   .hero__container{
     padding-top: 116px;
     padding-bottom: 116px;
