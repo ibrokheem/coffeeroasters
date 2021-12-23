@@ -4,74 +4,52 @@
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: center center;
+  background-position: center;
 }
 
 .hero-content{
+  @include flex-column;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-grow: 1;
 }
 
 .hero__title{
-  // width: 279px;
   margin: 0;
-  padding: 0;
   margin-bottom: 24px;
-  font-family: "Fraunces 9pt";
+  font-family: $font-stack-secondary;
   font-weight: 900;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  color: #FEFCF7;
+  color: $light-cream;
 }
 
 .hero__desc{
-  // width: 279px;
-  padding: 0;
   margin: 0;
   margin-bottom: 54px;
+  color: $light-cream;
   text-align: center;
-  color: #FEFCF7;
   opacity: 0.8;
 }
 
 .btn-create-plan{
-  font-family: "Fraunces 9pt";
-  font-style: normal;
+  font-family: $font-stack-secondary;
+  padding: 15px 31px;
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
-  color: #FEFCF7;
-  padding: 15px 31px;
-  background: #0E8784;
+  color: $light-cream;
   border-radius: 6px;
+  text-align: center;
+  background: $dark-cyan;
   text-decoration: none;
+
+  &:hover{
+    background-color: #66D2CF;
+  }
 }
-
-.btn-create-plan:hover{
-  background-color: #66D2CF;
-}
-
-.btn-create-plan--inline{
-  width: 217px;
-  display: inline-block;
-  margin-bottom: 120px;
-}
-
-// @media only screen and (min-width: 400px){
-//   .hero-content{
-//     background-size: 100% 100%;
-//     // background-position: top;
-//     width: 100%;
-//   }
-// }
-
 
 // TABLET
 @media only screen and (min-width: 750px) {
@@ -85,19 +63,17 @@
   }
 
   .hero-content{
-    width: 90%;
+    margin: 0;
+    padding-left: 58px;
+    width: 61%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
-    padding-left: 58px;
     text-align: left;
   }
 
   .hero__title{
-    width: 329px;
     margin: 0;
-    padding: 0;
     margin-bottom: 24px;
     font-weight: 900;
     font-size: 40px;
@@ -106,8 +82,6 @@
   }
 
   .hero__desc{
-    width: 398px;
-    padding: 0;
     margin: 0;
     margin-bottom: 40px;
     text-align: left;
@@ -131,7 +105,7 @@
   }
 
   .hero-content{
-    width: auto;
+    width: 50%;
     padding-left: 85px;
     display: flex;
     flex-direction: column;
@@ -140,9 +114,7 @@
   }
 
   .hero__title{
-    width: 493px;
     margin: 0;
-    padding: 0;
     margin-bottom: 32px;
     font-size: 72px;
     line-height: 72px;
@@ -150,10 +122,9 @@
   }
 
   .hero__desc{
-    width: 445px;
-    padding: 0;
     margin: 0;
     margin-bottom: 71px;
+    padding-right: 150px;
     text-align: left;
     font-size: 16px;
     line-height: 26px;

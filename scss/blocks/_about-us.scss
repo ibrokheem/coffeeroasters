@@ -1,0 +1,79 @@
+.about-us{
+  padding-top: 111px;
+  padding-bottom: 87px;
+  margin-bottom: 120px;
+  background-image: url("../../img/about-us-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.about-us__content {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.about-us__desc {
+  margin: 0;
+  font-family: $font-stack;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 750px) {
+  .about-us{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-bottom: 144px;
+    background-image: url("../../img/about-us-tablet.jpg");
+  }
+  
+  .about-us__content {
+    width: 69%;
+    padding-left: 58px;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .about-us__title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+  
+  .about-us__desc {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-us{
+    padding-top: 137px;
+    padding-bottom: 137px;
+    margin-bottom: 168px;
+    background-image: url("../../img/about-us-desktop.jpg");
+  }
+  
+  .about-us__content{
+    width: 40%;
+    padding-left: 85px;
+  }
+  
+  
+  .about-us__desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

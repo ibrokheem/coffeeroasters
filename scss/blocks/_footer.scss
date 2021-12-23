@@ -1,0 +1,140 @@
+.footer {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.footer__container {
+  @include flex-column;
+  padding: 54px;
+  background-color: rgba(44, 52, 62, 1);
+}
+
+.footer__logo {
+  display: block;
+  width: 217px;
+  height: 24px;
+  margin-bottom: 48px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+.footer__list {
+  @include list-unstyled;
+  @include flex-column;
+  margin-bottom: 48px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer__link {
+  display: inline-block;
+  font-family: $font-stack;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  color: $grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover{
+    color: $light-cream;
+    transition: color 0.5s ease;
+  }
+}
+
+.footer__socials {
+  @include list-unstyled;
+  @include flex-row;
+}
+
+.footer__socials-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer__socials-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+
+  &:hover{
+    color: $pale-orange;
+  }
+} 
+
+
+@media only screen and (min-width: 750px){
+  .footer {
+    padding: 0;
+  }
+  
+  .footer__container {
+    @include flex-column;
+    padding: 0;
+    padding-top: 47px;
+    padding-left: 85px;
+    padding-bottom: 47px;
+    padding-right: 85px;
+  }
+  
+  .footer__logo {
+    display: block;
+    margin: 0;
+    margin-bottom: 32px;
+    width: 236px;
+    height: 26px;
+  }
+  
+  .footer__list {
+    @include list-unstyled;
+    margin-bottom: 65px;
+    @include flex-row;
+  }
+  
+  .footer__item{
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0;
+      margin-right: 33px;
+    }
+  }
+  
+  .footer__socials {
+    margin: 0;
+  }
+  
+  .footer__socials-item:not(:last-child) {
+    margin-right: 24px;
+  }
+} 
+
+@media only screen and (min-width: 1000px){
+  .footer__container{
+    @include flex-row;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .footer__logo{
+    margin: 0;
+  }
+
+  .footer__list{
+    margin: 0;
+    margin-left: 102px;
+    margin-right: auto;;
+  }
+}
+
+

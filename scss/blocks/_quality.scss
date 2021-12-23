@@ -1,0 +1,121 @@
+.quality {
+  margin-bottom: 120px;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+
+.quality__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 61px;
+}
+
+.quality__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quality__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: $font-stack-secondary;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.quality__desc {
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: $font-stack;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+
+.quality__img{
+  width: 279px;
+  height: 156px;
+  display: block;
+  margin-top: -80px;
+  margin-bottom: 64px;
+}
+
+@media only screen and (min-width: 750px) {
+  .quality{
+    margin-bottom: 144px;
+  }
+
+  .quality__container{
+    padding-right: 74px;
+    padding-left: 74px;
+    padding-bottom: 67px;
+  }
+
+  .quality__title{
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .quality__desc{
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
+  .quality__img{
+    width: 573px;
+    height: 320px;
+    display: block;
+    margin-top: -160px;
+  }
+}
+
+@media only screen and (min-width: 1100px){
+  .quality {
+    margin-bottom: 168px;
+  }
+  
+  .quality__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-bottom: 88px;
+  }
+
+  .quality__content{
+    align-items: flex-start;
+    margin-right: 125px;
+  }
+  
+  .quality__title {
+    margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  
+  .quality__desc {
+    text-align: left;
+  }
+  
+  .quality__img{
+    width: 445px;
+    height: 474px;
+    display: block;
+    margin: 0;
+    margin-top: -87px;
+
+    // object-fit: cover;
+  }
+}

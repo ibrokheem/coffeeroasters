@@ -1,0 +1,99 @@
+.commitment{
+  margin-bottom: 200px;
+}
+
+.commitment__container{
+  @include flex-column;
+}
+
+.commitment__img{
+  margin-bottom: 48px;
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.commitment__title{
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $font-stack-secondary;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #333D4B;
+}
+
+.commitment__desc{
+  margin: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 750px) {
+  .commitment{
+    margin-bottom: 280px;
+  }
+  
+  .commitment__container{
+    @include flex-row;
+  }
+
+  .commitment__content{
+    @include flex-column;
+  }
+
+  .commitment__img{
+    margin: 0;
+    margin-right: 69px;
+    width: 281px;
+    height: 470px;
+  }
+  
+  .commitment__title{
+    margin-bottom: 30px;
+  }
+  
+  .commitment__desc{
+    padding: 0;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .commitment{
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-bottom: 256px;
+  }
+  
+  .commitment__container{
+    @include flex-row;
+  }
+
+  .commitment__content{
+    align-items: flex-start;
+  }
+
+  .commitment__img{
+    width: 445px;
+    height: 520px;
+    margin-right: 125px;
+  }
+
+  .commitment__title{
+    line-height: 48px;
+    text-align: left;
+  }
+  
+  .commitment__desc{
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+}
