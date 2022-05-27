@@ -1,0 +1,72 @@
+.create-plan {
+  margin-bottom: 120px;
+  padding: 101px 24px 136px;
+  background-image: url("../img/plan-phone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.create-plan__content {
+  text-align: center;
+}
+
+.create-plan__title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: $font-stack-secondary;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.create-plan__desc {
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 750px){
+  .create-plan {
+    padding: 127px 40px;
+    background-image: url("../img/plan-tablet.jpg");
+  }   
+  
+  .create-plan__content {
+    width: 68%;
+    text-align: left;
+  }
+  
+  .create-plan__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+  }
+  
+  .create-plan__desc {
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .create-plan {
+    padding-top: 134px;
+    padding-bottom: 134px;
+    padding-right: unset;
+    padding-left: 85px;
+    background-image: url("../img/plan-desktop.jpg");
+  }
+
+  .create-plan__content {
+    width: 40%;
+  }
+}
+

@@ -1,5 +1,11 @@
 .how-it-works {
   padding-bottom: 120px;
+
+  &--plan{
+    background-color: #2C343E;
+    border-radius: 8px;
+    margin-bottom: 120px;
+  }
 }
 
 .how-it-works__container {
@@ -25,27 +31,27 @@
 }
 
 .how-it-works__item {
-  position: relative;
   @include flex-column;
+  position: relative;
   margin-bottom: 56px;
   padding-right: 24px;
   padding-left: 24px;
-}
 
-.how-it-works__item:last-child{
-  margin-bottom: 79px;
-}
-
-.how-it-works__item::before{
-  width: 101px;
-  height: 72px;
-  margin-bottom: 24px;
-  font-family: $font-stack-secondary;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: center;
-  color: $pale-orange;
+  &:last-child{
+    margin-bottom: 79px;
+  }
+  
+  &::before{
+    width: 101px;
+    height: 72px;
+    margin-bottom: 24px;
+    font-family: $font-stack-secondary;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    color: $pale-orange;
+  }
 }
 
 .item-pick-coffee::before{
@@ -80,9 +86,45 @@
   text-align: center;
 }
 
+.how-it-works--plan .how-it-works__title{
+  display: none;
+}
+
+.how-it-works--plan .how-it-works__list{
+  padding-top: 80px;
+}
+
+.how-it-works--plan .how-it-works__item{
+  margin-right: 0;
+}
+
+.how-it-works--plan .how-it-works__item:last-child{
+  margin-bottom: 0;
+
+}
+
+.how-it-works--plan .how-it-works__item__title{
+  color: #fff;
+}
+
+.how-it-works--plan .how-it-works__item__desc{
+  color: #fff;
+}
+
+.how-it-works--plan .btn-create-plan{
+  display: none;
+}
+
 @media only screen and (min-width: 750px){
   .how-it-works {
     padding-bottom: 144px;
+
+    &--plan{
+      background-color: #2C343E;
+      border-radius: 8px;
+      padding-top: 97px;
+      margin-bottom: 120px;
+    }
   }
   
   .how-it-works__container {
@@ -115,6 +157,16 @@
       background-color: $pale-orange;
     }
   }
+
+  .how-it-works--plan .how-it-works__list{
+    margin-bottom: 0;
+
+    &::before{
+      top: 35px;
+      left: 20px;
+    }
+
+  }
   
   .how-it-works__item {
     margin: 0;
@@ -123,38 +175,42 @@
     flex-direction: column;
     align-items: flex-start;
     padding-right: 10px;
-  }
-  
-  .how-it-works__item:not(:last-child){
-    margin-right: 10px;
+
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+    
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &::before{
+      width: 100px;
+      height: 72px;
+      margin-bottom: 42px;
+      font-size: 72px;
+      line-height: 72px;
+      text-align: left;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 31px;
+      height: 31px;
+      background: $light-cream;
+      border: 2px solid $dark-cyan;
+      border-radius: 50%;
+    }
   }
 
-  .how-it-works__item:last-child{
-    margin-bottom: 0;
+  .how-it-works--plan .how-it-works__item::after{
+    background-color: transparent;
   }
 
-  .how-it-works__item::before{
-    width: 100px;
-    height: 72px;
-    margin-bottom: 42px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-  }
-
-  .how-it-works__item::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -60px;
-    left: 0;
-    width: 31px;
-    height: 31px;
-    background: $light-cream;
-    border: 2px solid $dark-cyan;
-    border-radius: 50%;
-  }
-  
   .how-it-works__item__title {
     margin: 0;
     margin-bottom: 38px;
@@ -170,12 +226,23 @@
     padding: 0;
     margin: 0;
     text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
   }
 }
 
 @media only screen and (min-width: 1000px){
   .how-it-works {
     padding-bottom: 200px;
+    padding-left: 85px;
+
+    &--plan{
+      background-color: #2C343E;
+      border-radius: 8px;
+      padding-top: 100px;
+      margin-bottom: 100px;
+    }
   }
 
   .how-it-works__title{
@@ -196,6 +263,12 @@
       height: 3px;
       background-color: $pale-orange;
     }
+  }
+
+  .how-it-works--plan .how-it-works__list::before{
+    width: 73%;
+    top: -5px;
+    left: 10px;
   }
   
   .how-it-works__item {
